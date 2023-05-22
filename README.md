@@ -28,14 +28,14 @@ Definimos el metodo POST
         birthdays = db.execute("SELECT * FROM birthdays")
         return render_template("index.html", message=message, birthdays=birthdays)
 ```
-En este punto podemos ver como adquirimos los datos y los guradamos en variables para poder utilizarlos a continuación.
+En este punto podemos ver como adquirimos los datos y los guradamos en variables para poder utilizarlos a continuación, como podemos ver estamos declarando las sigientes variables, ya que como queremos saber el nombre, el mes y el dia de cumpleaños pues por ello mismo estas son las variables que hemos declarado.
 ``` ruby
    name = request.form.get("name")
-        month = request.form.get("month")
-        day = request.form.get("day")
+   month = request.form.get("month")
+   day = request.form.get("day")
 ```
 
-Aquí podemos ver como se estrucuran los datos que mandaremos a nuestra base de datos
+Aquí podemos ver como se estrucuran los datos que mandaremos a nuestra base de datos, como se puede observar insertaremos el nombre, el mes y el dia de cumpleaños.
 ``` ruby
 db.execute(
     "INSERT INTO birthdays (name, month, day) VALUES(?, ?,?)",
@@ -104,7 +104,7 @@ En este ultimo punto podemos ver como se recuperan los datos de la base de datos
 </html>
 ```
 
-Si seguimos el tutorial llegamos al paso en el que hemos de crear los input para poder añadir nuevos cumpleaños a nuestra aplicación, y esto es lo que hacemos en este momento
+Si seguimos el tutorial llegamos al paso en el que hemos de crear los input para poder añadir nuevos cumpleaños a nuestra aplicación, y esto es lo que hacemos en este momento, clo que hacemos es crear un input para cada cosa que queremos que el usario nos inserte, es decir uno para el nombre, otro para el mes y otro para el dia y para acabar crearemos un boton para enviar la información a nuestra base de datos.
 ``` ruby
      <input name="name" type="text" placeholder="Name" autocomplete="off" autofocus>
      <input name="month" type="number" placeholder="Month" max="12" min="1" autocomplete="off" autofocus>
@@ -112,7 +112,7 @@ Si seguimos el tutorial llegamos al paso en el que hemos de crear los input para
      <input type="submit" value="Add Birthday">
 ```
 
-En este punto lo que hacemos es crear la tabla donde iremos mostrando todos los cumpleaños de forma ordenada.
+En este punto lo que hacemos es crear la tabla donde iremos mostrando todos los cumpleaños de forma ordenada, se mostrará en el siguiente orden, preimero el nombre a continuación el mes y por último el dia.
 ``` ruby
           <table>
                 <thead>
@@ -131,3 +131,4 @@ En este punto lo que hacemos es crear la tabla donde iremos mostrando todos los 
                 </tbody>
             </table>
 ```
+# Conclusión
