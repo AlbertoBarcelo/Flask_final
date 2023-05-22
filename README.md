@@ -132,3 +132,19 @@ En este punto lo que hacemos es crear la tabla donde iremos mostrando todos los 
             </table>
 ```
 # Conclusión
+
+Llegados a este paso ya hemos acabado el tutorial y lo que hemos de hacer ahora es descargar el entorno que tenemos en este mismo repositorio, dentro de el abriremos una terminal y ejecutaremos el siguinte comando **pip install cs50.
+ 
+Una vez ya tenemos el entorno preparado ejecutaremos **flask --app app run** este comando sirve para iniciar nuestra aplicación una vez arranque mantendremos pulsado ctrl + click en la ruta que nos aparezca: 
+![imagen](https://github.com/AlbertoBarcelo/Flask_final/assets/114684379/0964a475-8f2d-42e6-8c64-f6b917aff112)
+
+Esperaremos un momento y se nos abrira en el navegador nuestra aplicació y ya podremos utilizarla.
+![imagen](https://github.com/AlbertoBarcelo/Flask_final/assets/114684379/81445a0b-4f77-4486-871e-fc95514086c5)
+
+Y para comprobarlo añadiremos un cumpleaños:
+![imagen](https://github.com/AlbertoBarcelo/Flask_final/assets/114684379/47c01def-e552-434b-bafd-73dfde36012b)
+
+Y como podemos ver al pulsar el boton que pone "Add Birthday" ya nos ha aparecido el nuevo cumpleaños en la tabla:
+![imagen](https://github.com/AlbertoBarcelo/Flask_final/assets/114684379/f7996af8-0473-41bc-92c9-9b0cd27920ef)
+
+
