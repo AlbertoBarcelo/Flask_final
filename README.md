@@ -1,11 +1,13 @@
-# Flask_final
+# Flask_Birthdays
 
 
 Lo primero que hemos de hacer es descargar el archivo.zip que nos proporciona el tutorial, cuando lo tenemos descargado hemos de crear un proyecto al que lo podamos añadir.
 
 Ahora lo que haremos sera ir analiando poco a poco los diferentes archivos que forman parte de nuestra aplicación.
 
+-------
 ## APP.PY
+
 En este punto lo que se busca es configurar la conexión con la base de datos
 ``` ruby
 db = SQL("sqlite:///birthdays.db")
@@ -62,3 +64,5 @@ En este ultimo punto podemos ver como se recuperan los datos de la base de datos
         birthdays = db.execute("SELECT * FROM birthdays")
         return render_template("index.html", message=message, birthdays=birthdays)
 ```
+-------
+## INDEX.HTML
