@@ -133,7 +133,7 @@ En este punto lo que hacemos es crear la tabla donde iremos mostrando todos los 
 ```
 # Conclusión
 
-Llegados a este paso ya hemos acabado el tutorial y lo que hemos de hacer ahora es descargar el entorno que tenemos en este mismo repositorio, dentro de el abriremos una terminal y ejecutaremos el siguinte comando **pip install cs50.
+Llegados a este paso ya hemos acabado el tutorial y lo que hemos de hacer ahora es descargar el entorno que tenemos en este mismo repositorio, dentro de el abriremos una terminal y ejecutaremos el siguinte comando **pip install cs50**.
  
 Una vez ya tenemos el entorno preparado ejecutaremos **flask --app app run** este comando sirve para iniciar nuestra aplicación una vez arranque mantendremos pulsado ctrl + click en la ruta que nos aparezca: 
 
