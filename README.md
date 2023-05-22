@@ -19,19 +19,12 @@ Definimos el metodo POST
         name = request.form.get("name")
         month = request.form.get("month")
         day = request.form.get("day")
-        if not name:
-            message = "Missing name"
-        elif not month:
-            message = "Missing month"
-        elif not day:
-            message = "Missing day"
-        else:
-            db.execute(
-                "INSERT INTO birthdays (name, month, day) VALUES(?, ?,?)",
-                name,
-                month,
-                day,
-            )
+        db.execute(
+             "INSERT INTO birthdays (name, month, day) VALUES(?, ?,?)",
+             name,
+             month,
+             day,
+         )
         birthdays = db.execute("SELECT * FROM birthdays")
         return render_template("index.html", message=message, birthdays=birthdays)
 ```
@@ -42,20 +35,13 @@ En este punto podemos ver como adquirimos los datos y los guradamos en variables
         day = request.form.get("day")
 ```
 
-Aquí podemos ver como se actuara en el caso de que se de uno de los siguintes errores.
+Aquí podemos ver como se estrucuran los datos que mandaremos a nuestra base de datos
 ``` ruby
- if not name:
-            message = "Missing name"
-        elif not month:
-            message = "Missing month"
-        elif not day:
-            message = "Missing day"
-        else:
-            db.execute(
-                "INSERT INTO birthdays (name, month, day) VALUES(?, ?,?)",
-                name,
-                month,
-                day,
+db.execute(
+    "INSERT INTO birthdays (name, month, day) VALUES(?, ?,?)",
+     name,
+     month,
+     day,
             )
 ```
 
@@ -83,9 +69,6 @@ En este ultimo punto podemos ver como se recuperan los datos de la base de datos
     </div>
     <div class="container">
         <div class="section">
-            <div class="error_message">
-                {{ message }}
-            </div>
             <h2>Add a Birthday</h2>
             <form action="/" method="POST">
                 <input name="name" type="text" placeholder="Name" autocomplete="off" autofocus>
@@ -119,13 +102,6 @@ En este ultimo punto podemos ver como se recuperan los datos de la base de datos
 </body>
 
 </html>
-```
-
-Creamos un div donde colocaremos el mensaje de error en el momento que el usuario haga algo que no este disponible.
-``` ruby
- <div class="error_message">
-                {{ message }}
-            </div>
 ```
 
 Si seguimos el tutorial llegamos al paso en el que hemos de crear los input para poder añadir nuevos cumpleaños a nuestra aplicación, y esto es lo que hacemos en este momento
