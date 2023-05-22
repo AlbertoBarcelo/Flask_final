@@ -8,7 +8,7 @@ Ahora lo que haremos sera ir analiando poco a poco los diferentes archivos que f
 -------
 ## APP.PY
 
-En este punto lo que se busca es configurar la conexión con la base de datos
+En este punto lo que hacemos es instanciar el archivo de la base de datos en lenguaje SQL en una variable, para utilizarla posteriormente con más facilidad.
 ``` ruby
 db = SQL("sqlite:///birthdays.db")
 ```
