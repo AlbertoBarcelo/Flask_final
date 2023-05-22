@@ -128,7 +128,7 @@ Creamos un div donde colocaremos el mensaje de error en el momento que el usuari
             </div>
 ```
 
-En este punto lo que hacemos es crear los inputs para poder añadir los nuevos cumpleaños a nuestra aplicación.
+Si seguimos el tutorial llegamos al paso en el que hemos de crear los input para poder añadir nuevos cumpleaños a nuestra aplicación, y esto es lo que hacemos en este momento
 ``` ruby
      <input name="name" type="text" placeholder="Name" autocomplete="off" autofocus>
      <input name="month" type="number" placeholder="Month" max="12" min="1" autocomplete="off" autofocus>
