@@ -1,15 +1,6 @@
 # Flask_final
 
-## Primer paso
-Descargamos el zip.
 
-![imagen](https://github.com/AlbertoBarcelo/Flask_final/assets/114684379/b6807d7b-9381-47fc-a4b3-4d8a6ec22a2a)
+Lo primero que hemos de hacer es descargar el archivo.zip que nos proporciona el tutorial, cuando lo tenemos descargado hemos de crear un proyecto al que lo podamos añadir.
 
-Y una vez lo tenemos descargado lo descomprimimos.
-
-![imagen](https://github.com/AlbertoBarcelo/Flask_final/assets/114684379/267cc4d8-df8b-41ee-a180-28f92e9603ae)
-
-## Segundo paso
-Añadimos la carpeta a nuestro entorno.
-
-![imagen](https://github.com/AlbertoBarcelo/Flask_final/assets/114684379/587972a6-b247-4178-b32d-7206bf619c89)
+Ahora lo que haremos sera ir analiando poco a poco los diferentes archivos que forman parte de nuestra aplicación.
