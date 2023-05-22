@@ -121,3 +121,37 @@ En este ultimo punto podemos ver como se recuperan los datos de la base de datos
 </html>
 ```
 
+Creamos un div donde colocaremos el mensaje de error en el momento que el usuario haga algo que no este disponible.
+``` ruby
+ <div class="error_message">
+                {{ message }}
+            </div>
+```
+
+En este punto lo que hacemos es crear los inputs para poder añadir los nuevos cumpleaños a nuestra aplicación.
+``` ruby
+     <input name="name" type="text" placeholder="Name" autocomplete="off" autofocus>
+     <input name="month" type="number" placeholder="Month" max="12" min="1" autocomplete="off" autofocus>
+     <input name="day" type="number" placeholder="Day" max="31" min="1" autocomplete="off" autofocus>
+     <input type="submit" value="Add Birthday">
+```
+
+En este punto lo que hacemos es crear la tabla donde iremos mostrando todos los cumpleaños de forma ordenada.
+``` ruby
+          <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Birthday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for birthday in birthdays %}
+                    <tr>
+                        <td>{{ birthday.name }}</td>
+                        <td>{{ birthday.month}}/{{ birthday.day }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+```
